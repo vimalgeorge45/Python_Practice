@@ -1,0 +1,26 @@
+n = int(input("Enter the number"))
+q = n
+p = n**2
+j = 0
+k = 0
+def rev_n(a):
+    sum = 0
+    while(a>0):
+        b = int(a%10)
+        sum = sum*10 + b
+        a = int(a/10)
+    return sum
+
+while(q>0):
+    q = int(q/10)
+    j = j+1
+
+for i in range(1,j+1,1):
+    r = int(p%10)
+    k = k*10 + r
+    p = int(p/10)
+c = rev_n(k)
+if(c==n):
+    print(str(n) + " is an automorphic number")
+else:
+    print(str(n) + " is not an automorphic number")

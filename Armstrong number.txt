@@ -1,0 +1,11 @@
+n = int(input("Enter the number"))
+p = n
+arm = 0
+while(n>0):
+    r = int(n%10)
+    arm = arm + (r**3)
+    n = int(n/10)
+if(arm==p):
+    print(str(p) + " is an armstrong number")
+else:
+    print(str(p) + " is not an armstrong number")
