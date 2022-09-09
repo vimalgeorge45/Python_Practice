@@ -1,0 +1,7 @@
+import math
+n = int(input("Enter the number"))
+r = int(math.sqrt(n))
+if((r**2)==n):
+    print(str(n) + " is a perfect square number")
+else:
+    print(str(n) + " is not a perfect square number")

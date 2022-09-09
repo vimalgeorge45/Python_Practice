@@ -1,0 +1,15 @@
+def friendy (n):
+    sum = 0
+    for i in range(1,n+1,1):
+        if(n%i==0):
+            sum = sum + i
+    z = float(sum/n)
+    return z
+n1 = int(input("Enter first number"))
+n2 = int(input("Enter second number"))
+n3 = friendy(n1)
+n4 = friendy(n2)
+if(n3==n4):
+    print(str(n1) + " and " + str(n2) + " are friendly pairs")
+else:
+    print(str(n1) + " and " + str(n2) + " are not friendly pairs")

@@ -1,0 +1,11 @@
+n = int(input("Enter the number"))
+p = n
+sum = 0
+while(n>0):
+    r = int(n%10)
+    sum = sum + r
+    n = int(n/10)
+if(p%sum==0):
+    print(str(p) + " is a Harshad number")
+else:
+    print(str(p) + " is not a Harshad number")

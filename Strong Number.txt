@@ -1,0 +1,20 @@
+n = int(input("Enter the number"))
+p = n
+strong = 0
+def fact(m):
+    q = 1
+    while(m>0):
+        q = (q*m)
+        m = (m-1)
+    return q
+while(n>0):
+    r = int(n%10)
+    s = fact(r)
+    strong = strong + s
+    n = int(n/10)
+if(strong==p):
+    print(str(p) + " is a strong number")
+else:
+    print(str(p) + " is not a strong number")
+
+

@@ -1,0 +1,7 @@
+n1 = int(input("Enter lower limit"))
+n2 = int(input("Enter upper limit"))
+sum = 0
+for i in range(n1, n2+1, 1):
+    sum = sum + i
+    i = i + 1
+print(sum)
